@@ -57,3 +57,35 @@ header .relleno{ height:7rem; background:url("src/bg.jpg"); background-size: 50%
 #interes a .int_desc{display: block; padding-top: 1rem;}
 #interes .card{ background:#EFF0E9; border-radius:0; }
 #interes .row{ margin:.5rem 1rem; width:calc(100% - 2rem); }
+
+
+
+
+#menuSalto li{
+	     display:inline;
+     padding-left:3px;
+     padding-right:3px;
+    background-color:#333;
+    color: white;
+}
+/* unvisited link */
+#menuSalto a:link {
+  color: white;
+}
+
+/* visited link */
+#menuSalto a:visited {
+  color: white;
+}
+
+/* mouse over link */
+#menuSalto a:hover {
+  color: orange;
+}
+
+/* selected link */
+#menuSalto a:active {
+  color: blue;
+}
+
+

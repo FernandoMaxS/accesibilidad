@@ -8,6 +8,8 @@
 	<link href="menu/menu.css" rel="stylesheet" />
 	
 	<script src="inicio.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
 	<title></title>
 </head>
 <body id="index" onload="set_cols_size();">
@@ -34,6 +36,12 @@
 				<li><a href="contacto.html">Contacto</a></li>
 			</ul>
 		</div><!--end menu-->
+		<div>
+			<ul id="menuSalto">
+				<li><a href="#" id="sitio" >Saltar a Sitios de Interes</a></li>
+				<li><a href="#"id="pie" >Saltar a Pie de Pagina</a></li>
+			</ul>
+		</div>
 		<script src="menu/menu.js"></script>
 	</header>
 
@@ -42,7 +50,7 @@
 		<div class="row row-multiple clearfix">
 			<section id="destacado" class="col col_2-3">
 				<div class="card clearfix">
-					<h2>Destacado</h2>
+					<h1>Destacado</h1>
 					<img src="src/capacitacion.jpg" alt="Personas tomando clase">
 					<div class="dest_desc">
 						<p id="tit_destacado">COVID</p>
@@ -54,7 +62,7 @@
 			</section>
 			<section id="noticias" class="col col_1-3">
 				<div class="card">
-					<h2>Noticias</h2>
+					<h1>Noticias</h1>
 					<div class="noticia"><a href="#" class="clearfix"><img src="src/n1.jpg" alt="" /><span class="not_desc">Noticia 1<span class="not_fecha">20/10/2020</span></span></a></div>
 					<div class="noticia"><a href="#" class="clearfix" class="clearfix"><img alt="" src="src/n2.jpg" /><span class="not_desc">Noticia 2<span class="not_fecha">19/10/2020</span></span></a></div>
 					<div class="noticia"><a href="#" class="clearfix"><img alt=""src="src/n3.jpg" /><span class="not_desc">Noticia 3<span class="not_fecha">18/10/2020</span></span></a></div>
@@ -64,7 +72,7 @@
 		</div>
 		<section id="interes" class="clearfix">
 			<div class="row">
-				<h2>Sitios de interés</h2>
+				<h1>Sitios de interés</h1>
 				<div class="col col_1-5"><a href="https://google.com.mx" alt="" class="card" target="_blank" ><img src="src/interes1.png" height="112" width="320"  /><span class="int_desc">Google</span></a></div>
 				<div class="col col_1-5"><a href="https://validator.w3.org/" alt="" class="card" target="_blank" ><img src="src/interes2.png" /><span class="int_desc">Validador HTML del W3C</span></a></div>
 				<div class="col col_1-5"><a href="https://webaim.org/resources/contrastchecker/" alt="" class="card" target="_blank" ><img src="src/interes3.png" /><span class="int_desc">Webaim Contrast Checker</span></a></div>
@@ -103,4 +111,5 @@
 		</div>
 	</footer>
 </body>
+<script src="desplaza.js"></script>
 </html>
