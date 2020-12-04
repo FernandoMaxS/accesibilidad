@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<!--global-->
+	<link href="styles.css" rel="stylesheet" />
+	<!--menu-->
+	<link href="menu/menu.css" rel="stylesheet" />
+	<!--acordeon-->
+	<link href="panel/panel.css" rel="stylesheet" />
+	<title></title>
+</head>
+<body>
+	<header>
+		<div class="relleno clearfix">
+			<div class="bar">
+				<p>&nbsp;</p>
+			</div>
+			<div id="reg_login" class="bar">
+				<p><a href="registro.html">Registrarme / Iniciar sesión</a></p>
+			</div>
+		</div>
+		<div id="menubar">
+			<ul>
+				<li><a href="/miweb">Inicio</a></li>
+				<li><a href="nosotros.html">Nosotros</a></li>
+				<li>
+					<a href="#" onclick="preventDefault(e);" class="dropdown">Tienda</a>
+					<ul>
+					  <li><a href="productos.html">Productos</a></li>
+					  <li><a href="servicios.html">Servicios</a></li>
+					</ul>
+				</li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</div><!--end menu-->
+		<script src="menu/menu.js"></script>
+	</header>
+
+	<main id="main">
+		<p class="titulo_principal">Servicios</p>
+			<iframe  height="350" width="500" src="https://www.youtube.com/embed/-G0qfIFOErI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen=""></iframe>
+			<div id="panel">	
+				<div class="tabs">
+					<button class="tab" id="t-1">
+						Capacitación
+					</button>
+					<button class="tab" id="t-2">
+						Auditoría
+					</button>
+					<button class="tab" id="t-3">
+						Asesoramiento
+					</button>
+				</div>
+				<div class="panel open">
+					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sodales senectus integer, congue orci ultrices iaculis erat pharetra gravida cubilia ac, justo neque dui aenean cras fusce feugiat conubia tortor. Fusce morbi viverra cubilia ante blandit condimentum nec, dui luctus vel consequat fermentum vulputate. Suscipit nostra metus a hac eleifend bibendum in iaculis ultricies aenean, aliquet ad mi vehicula auctor congue per nunc penatibus, egestas pharetra feugiat erat sapien hendrerit consequat viverra malesuada.</p>
+					<p>Risus massa nec hac dictumst purus justo vulputate non aliquam odio parturient ligula congue, rutrum montes est eros laoreet quam lobortis donec arcu velit varius. Aliquet blandit porta et libero tempor eget in iaculis cras, dui morbi nulla diam dignissim consequat elementum praesent. Purus blandit vulputate id velit erat et pulvinar, hendrerit arcu non lacus ut porta fermentum, duis tincidunt eleifend integer fames diam.</p>
+				</div>
+				<div class="panel">
+					<p>Iaculis pretium primis imperdiet libero ut montes fermentum morbi cubilia, duis ullamcorper maecenas fusce eget dis arcu ultricies eu, bibendum in fames lacinia cras aliquam tempor quisque. Morbi in felis sodales dui cubilia nulla enim pellentesque vestibulum, congue faucibus eleifend pharetra donec praesent molestie imperdiet, porttitor mi aliquet malesuada nascetur duis iaculis tincidunt. Odio massa mi mattis curae rhoncus diam in id semper porta arcu ullamcorper quis, purus at natoque potenti quam eu eros tortor vivamus nostra luctus. Per quis donec diam gravida ultricies, vivamus litora posuere cum eleifend sem, varius libero malesuada penatibus.</p>
+					<p>Volutpat fusce pellentesque nascetur erat diam mus libero netus, nullam senectus ullamcorper habitasse commodo imperdiet montes, viverra porttitor consequat nostra etiam mauris tellus. Condimentum dictumst varius fames eget viverra vivamus etiam nulla integer, senectus aliquam phasellus risus enim nisi scelerisque natoque himenaeos, egestas pretium cras nunc aliquet vulputate placerat vestibulum. In ut montes vestibulum magna cum himenaeos dis, rutrum diam sollicitudin curae ridiculus integer elementum torquent, bibendum cursus ornare fusce morbi penatibus. Purus curae ultricies lacus blandit curabitur id convallis, justo at viverra scelerisque eget magna natoque, dictum duis himenaeos volutpat euismod ridiculus.</p>
+				</div>
+				<div class="panel">
+					<p>Mi nec gravida conubia neque, non a ut pulvinar, id pellentesque dignissim. Ac urna metus sem erat taciti torquent dictum feugiat imperdiet viverra, aliquet at eros congue rhoncus convallis lectus egestas orci, lacinia dictumst non maecenas magna quam mauris nisl facilisis. Himenaeos iaculis habitasse turpis primis maecenas varius integer, euismod molestie eleifend taciti eu posuere sed, in dis hac sociosqu lacus magnis.</p>
+					<p>Commodo nibh felis mattis eleifend mauris gravida ultricies rhoncus taciti morbi, leo varius vehicula fringilla bibendum parturient montes fames nascetur velit, ligula tincidunt facilisis augue proin lobortis risus sociosqu suscipit. Cursus leo iaculis aenean rutrum montes pharetra vitae parturient feugiat pellentesque congue cum placerat pulvinar torquent, hac habitant cras id tincidunt scelerisque ante consequat senectus tortor interdum vehicula eleifend. Vulputate vivamus nullam luctus scelerisque litora nisi, metus at integer nulla iaculis vitae, nec fusce cubilia est aliquam..</p>
+				</div>
+			</div>
+			<script src="panel/panel.js"></script>
+		
+	</main>
+
+	<footer>
+		<div class="row clearfix"> 
+			<div class="col col_1-5"></div>
+			<div class="col col_1-5">
+				<p>Derechos reservados 2020</p>
+				<p><br/></p>
+				<p>
+					<a href="#">Aviso de privacidad</a><br/>
+					<a href="#">Términos y condiciones</a>
+				</p>
+			</div>
+			<div class="col col_1-5">
+				
+			</div>
+			<div id="redes_sociales" class="col col_1-5">
+				<p>
+					<a href="https://facebook.com" target="_blank" ><img src="src/ico_facebook_w.png" /></a>
+					<a href="https://twitter.com" target="_blank" ><img src="src/ico_twitter_w.png" /></a>
+					<a href="https://youtube.com" target="_blank" ><img src="src/ico_youtube_w.png" /></a>
+					<a href="https://instagram.com" target="_blank" ><img src="src/ico_instagram_w.png" /></a>
+					<a href="https://linkedin.com" target="_blank" ><img src="src/ico_linkedin_w.png" /></a>
+					<a href="https://web.whatsapp.com" target="_blank" ><img src="src/ico_whatsapp_w.png" /></a>
+					<a href="https://pinterest.com" target="_blank" ><img src="src/ico_pinterest_w.png" /></a>
+				</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

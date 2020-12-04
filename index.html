@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<!--global-->
+	<link href="styles.css" rel="stylesheet" />
+	<!--menu-->
+	<link href="menu/menu.css" rel="stylesheet" />
+	
+	<script src="inicio.js"></script>
+	<title></title>
+</head>
+<body id="index" onload="set_cols_size();">
+	<header>
+		<div class="relleno clearfix">
+			<div class="bar">
+				<p>&nbsp;</p>
+			</div>
+			<div id="reg_login" class="bar">
+				<p><a href="registro.html">Registrarme / Iniciar sesión</a></p>
+			</div>
+		</div>
+		<div id="menubar">
+			<ul>
+				<li><a href="/miweb">Inicio</a></li>
+				<li><a href="nosotros.html">Nosotros</a></li>
+				<li>
+					<a href="#" onclick="preventDefault(e);" class="dropdown">Tienda</a>
+					<ul>
+					  <li><a href="productos.html">Productos</a></li>
+					  <li><a href="servicios.html">Servicios</a></li>
+					</ul>
+				</li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</div><!--end menu-->
+		<script src="menu/menu.js"></script>
+	</header>
+
+	<main id="main">
+		<p class="titulo_principal">Mi web</p>
+		<div class="row row-multiple clearfix">
+			<section id="destacado" class="col col_2-3">
+				<div class="card clearfix">
+					<h2>Destacado</h2>
+					<img src="src/capacitacion.jpg" alt="Personas tomando clase">
+					<div class="dest_desc">
+						<p id="tit_destacado">COVID</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sodales senectus integer, congue orci ultrices iaculis erat pharetra gravida cubilia ac, justo neque dui aenean cras fusce feugiat conubia tortor. </p>
+						<p>Fusce morbi viverra cubilia ante blandit condimentum nec, dui luctus vel consequat fermentum vulputate. </p>
+						<p>Suscipit nostra metus a hac eleifend bibendum in iaculis ultricies aenean, aliquet ad mi vehicula auctor congue per nunc penatibus, egestas pharetra feugiat erat sapien hendrerit consequat viverra malesuada... <a href="covid.html">Leer más</a></p>
+					</div>
+				</div>
+			</section>
+			<section id="noticias" class="col col_1-3">
+				<div class="card">
+					<h2>Noticias</h2>
+					<div class="noticia"><a href="#" class="clearfix"><img src="src/n1.jpg" alt="" /><span class="not_desc">Noticia 1<span class="not_fecha">20/10/2020</span></span></a></div>
+					<div class="noticia"><a href="#" class="clearfix" class="clearfix"><img alt="" src="src/n2.jpg" /><span class="not_desc">Noticia 2<span class="not_fecha">19/10/2020</span></span></a></div>
+					<div class="noticia"><a href="#" class="clearfix"><img alt=""src="src/n3.jpg" /><span class="not_desc">Noticia 3<span class="not_fecha">18/10/2020</span></span></a></div>
+					<div class="noticia"><a href="#" class="clearfix"><img alt="" src="src/n4.jpg" /><span class="not_desc">Noticia 4<span class="not_fecha">17/10/2020</span></span></a></div>
+				</div>
+			</section>
+		</div>
+		<section id="interes" class="clearfix">
+			<div class="row">
+				<h2>Sitios de interés</h2>
+				<div class="col col_1-5"><a href="https://google.com.mx" alt="" class="card" target="_blank" ><img src="src/interes1.png" height="112" width="320"  /><span class="int_desc">Google</span></a></div>
+				<div class="col col_1-5"><a href="https://validator.w3.org/" alt="" class="card" target="_blank" ><img src="src/interes2.png" /><span class="int_desc">Validador HTML del W3C</span></a></div>
+				<div class="col col_1-5"><a href="https://webaim.org/resources/contrastchecker/" alt="" class="card" target="_blank" ><img src="src/interes3.png" /><span class="int_desc">Webaim Contrast Checker</span></a></div>
+				<div class="col col_1-5"><a href="https://nvda.es/descargas/descarga-de-nvda/" alt="" class="card" target="_blank" ><img src="src/interes4.png"  /><span class="int_desc">Descarga oficial de NVDA</span></a></div>
+				<div class="col col_1-5"><a href="https://www.hearcolors.com.mx/web/inicio" alt="" class="card" target="_blank" ><img src="src/interes5.png"  /><span class="int_desc">Hearcolors</span></a></div>
+			</div>
+		</section>
+		
+	</main>
+
+	<footer>
+		<div class="row clearfix"> 
+			<div class="col col_1-5"></div>
+			<div class="col col_1-5">
+				<p>Derechos reservados 2020</p>
+				<p><br/></p>
+				<p>
+					<a href="#">Aviso de privacidad</a><br/>
+					<a href="#">Términos y condiciones</a>
+				</p>
+			</div>
+			<div class="col col_1-5">
+				
+			</div>
+			<div id="redes_sociales" class="col col_1-5">
+				<p>
+					<a href="https://facebook.com" target="_blank" ><img alt="facebook de mi sitio" src="src/ico_facebook_w.png" /></a>
+					<a href="https://twitter.com" target="_blank" ><img alt="Twitter de mi sitio"src="src/ico_twitter_w.png" /></a>
+					<a href="https://youtube.com" target="_blank" ><img alt="youtube de mi sito" src="src/ico_youtube_w.png" /></a>
+					<a href="https://instagram.com" target="_blank" ><img alt="instagram de mi sito" src="src/ico_instagram_w.png" /></a>
+					<a href="https://linkedin.com" target="_blank" ><img alt="linkedin de mi sitio" src="src/ico_linkedin_w.png" /></a>
+					<a href="https://web.whatsapp.com" target="_blank" ><img alt="whatsapp de mi sitio" src="src/ico_whatsapp_w.png" /></a>
+					<a href="https://pinterest.com" target="_blank" ><img alt="pinterest de mi sitio" src="src/ico_pinterest_w.png" /></a>
+				</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

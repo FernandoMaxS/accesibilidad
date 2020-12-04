@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<!--global-->
+	<link href="styles.css" rel="stylesheet" />
+	<!--menu-->
+	<link href="menu/menu.css" rel="stylesheet" />
+	<!--form-->
+	<link href="formulario/formulario.css" rel="stylesheet" />
+	<script src="formulario/formulario.js"></script>
+	<title></title>
+</head>
+<body>
+	<header>
+		<div class="relleno clearfix">
+			<div class="bar">
+				<p>&nbsp;</p>
+			</div>
+			<div id="reg_login" class="bar">
+				<p><a href="registro.html">Registrarme / Iniciar sesión</a></p>
+			</div>
+		</div>
+		<div id="menubar">
+			<ul>
+				<li><a href="/miweb">Inicio</a></li>
+				<li><a href="nosotros.html">Nosotros</a></li>
+				<li>
+					<a href="#" onclick="preventDefault(e);" class="dropdown">Tienda</a>
+					<ul>
+					  <li><a href="productos.html">Productos</a></li>
+					  <li><a href="servicios.html">Servicios</a></li>
+					</ul>
+				</li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</div><!--end menu-->
+		<script src="menu/menu.js"></script>
+	</header>
+
+	<main id="main">
+		<p class="titulo_principal">Registro</p>
+		<div id="registro">
+			<p tabindex="0">Campos con * son obligatorios</p>
+			<div id="mensajes"></div>
+			<form action="#" action="post" name="registro">
+				
+				<table>
+					<tr>
+					<td><label for="nombre">*Nombre: </label></td>
+					<td>
+						<input type="text" id="nombre" name="nombre" />
+						<p id="enombre"></p></td></tr>
+
+					<tr>
+					<td><label for="edad">Edad:</label></td>
+					<td>
+						<input type="number" id="edad" name="edad"/>
+						<p id="eedad"></p></td></tr>
+
+					<tr>
+						<fieldset>
+					<td><legend>Género</legend></td>
+					<td>
+						<input type="radio" name="genero" id="mujer" value="mujer" /><label for="mujer"> mujer&emsp;</label>
+						<input type="radio" name="genero" id="hombre" value="hombre" /><label for="hombre">hombre&emsp;</label> 
+						<input type="radio" id="otro" name="genero" value="otro" /><label> otro</label>
+						<p id="egenero"></p>
+					</td>
+					</fieldset>
+					</tr>
+
+					<tr>
+					<td><label for="pais">País:</label></td>
+					<td>
+						<select name="pais" id="pais">
+							<option value="AL">Alemania</option>
+							<option value="AR">Argentina</option>
+							<option value="CA">Canadá</option>
+							<option value="CH">China</option>
+							<option value="CO">Corea</option>
+							<option value="EU">Estados Unidos</option>
+							<option value="FR">Francia</option>
+							<option value="IN">India</option>
+							<option value="EN">Inglaterra</option>
+							<option value="IT">Italia</option>
+							<option value="JP">Japón</option>
+							<option value="MX" selected="selected">México</option>
+							<option value="RU">Rusia</option>
+							<option value="TA">Tailandia</option>
+						</select>
+						<p id="epais"></p></td></tr>
+
+					<tr>
+					<td><label for="correo">*Correo:</label></td>
+					<td>
+						<input type="text" name="correo" id="correo" />
+						<p id="ecorreo"></p></td></tr>
+
+					<tr>
+					<td><label for="lada">Teléfono:</label></td>
+					<td>
+						<input type="text" id="lada" name="tellada" /> <label for="numero">-</label> <input type="text" name="telnum" id="numero" />
+						<p id="etel"></p></td></tr>
+					<tr>
+						<fieldset>
+					<td><legend>Temas de interés</legend></td>
+					<td>
+						<input type="checkbox" name="temInt" /> Ciencia y tecnología<br/>
+						<input type="checkbox" name="temInt" /> Música y artes<br/>
+						<input type="checkbox" name="temInt" /> Cocina y repostería<br/>
+						<input type="checkbox" name="temInt" /> Literatura<br/>
+						<input type="checkbox" name="temInt" /> Viajes
+						<p id="einteres"></p></td>
+					</fieldset>
+					</tr>
+
+					<tr>
+					<td colspan="2">Algo sobre ti:<br/>
+						<input type="text" name="sobreTi" />
+						<p id="esobre"></p></td></tr>
+
+					<tr>
+					<td>*Contraseña:</td>
+					<td>
+						<input type="password" name="pwd" />
+						<span class="adicionalCampo">Deberá componerse de 8 a 12 caracteres, contener al menos una mayúscula, una minúscula, un número, un caracter especial y sin espacios</span>
+						<p id="epwd"></p></td></tr>
+
+					<tr>
+					<td colspan="2">
+						<input type="checkbox" name="terminos" >
+						*Acepto los <a href="http://www.google.com.mx" target="_blank">términos y condiciones</a>
+						<p id="eterminos"></p></td></tr>
+
+					<tr>
+					<td></td>
+					<td>
+						<input type="submit" name="enviar" value="Enviar" id="enviar" onclick="valida();" />
+						</td></tr>
+
+				</table>
+				
+			</form></div>
+		
+	</main>
+
+	<footer>
+		<div class="row clearfix"> 
+			<div class="col col_1-5"></div>
+			<div class="col col_1-5">
+				<p>Derechos reservados 2020</p>
+				<p><br/></p>
+				<p>
+					<a href="#">Aviso de privacidad</a><br/>
+					<a href="#">Términos y condiciones</a>
+				</p>
+			</div>
+			<div class="col col_1-5">
+				
+			</div>
+			<div id="redes_sociales" class="col col_1-5">
+				<p>
+					<a href="https://facebook.com" target="_blank" ><img src="src/ico_facebook_w.png" /></a>
+					<a href="https://twitter.com" target="_blank" ><img src="src/ico_twitter_w.png" /></a>
+					<a href="https://youtube.com" target="_blank" ><img src="src/ico_youtube_w.png" /></a>
+					<a href="https://instagram.com" target="_blank" ><img src="src/ico_instagram_w.png" /></a>
+					<a href="https://linkedin.com" target="_blank" ><img src="src/ico_linkedin_w.png" /></a>
+					<a href="https://web.whatsapp.com" target="_blank" ><img src="src/ico_whatsapp_w.png" /></a>
+					<a href="https://pinterest.com" target="_blank" ><img src="src/ico_pinterest_w.png" /></a>
+				</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

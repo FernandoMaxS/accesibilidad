@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<!--global-->
+	<link href="styles.css" rel="stylesheet" />
+	<!--menu-->
+	<link href="menu/menu.css" rel="stylesheet" />
+	<title></title>
+</head>
+<body>
+	<header>
+		<div class="relleno clearfix">
+			<div class="bar">
+				<p>&nbsp;</p>
+			</div>
+			<div id="reg_login" class="bar">
+				<p><a href="registro.html">Registrarme / Iniciar sesión</a></p>
+			</div>
+		</div>
+		<div id="menubar">
+			<ul>
+				<li><a href="/miweb">Inicio</a></li>
+				<li><a href="nosotros.html">Nosotros</a></li>
+				<li>
+					<a href="#" onclick="preventDefault(e);" class="dropdown">Tienda</a>
+					<ul>
+					  <li><a href="productos.html">Productos</a></li>
+					  <li><a href="servicios.html">Servicios</a></li>
+					</ul>
+				</li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</div><!--end menu-->
+		<script src="menu/menu.js"></script>
+	</header>
+
+	<main id="main">
+		<p class="titulo_principal">Productos</p>
+		<div class="productos">
+		<img src="src/productos_A.png" />
+		<div>
+
+		<caption class="tabdes">Categoría B</caption>
+		<table class="productos">
+				<tr>
+					<td class="celtit" id="pago" rowspan="3">Pago</td>
+					<td class="celtit" id="productos" colspan="4">Productos</td>
+				</tr>
+				<tr>
+					<td class="celtit" headers="productos" id="planA" colspan="2">Plan A</td>
+					<td class="celtit" headers="productos" id="planB" colspan="2">Plan B</td>
+				</tr>
+				<tr>
+					<td class="celtit" headers="productos planA">B1</td>
+					<td class="celtit" headers="productos planA">B2</td>
+					<td class="celtit" headers="productos planB">B3</td>
+					<td class="celtit" headers="productos planB">B4</td>
+				</tr>
+				<tr class="rw-color">
+					<td class="celtit" scope="row">7 días antes de fecha límite</td>
+					<td>$92.00</td>
+					<td>$285.00</td>
+					<td>$478.00</td>
+					<td>$478.00</td>
+				</tr>
+				<tr>
+					<td class="celtit" scope="row">Antes/En fecha límite</td>
+					<td>$100.00</td>
+					<td>$300.00</td>
+					<td>$500.00</td>
+					<td>$800.00</td>
+				</tr>
+				<tr class="rw-color">
+					<td class="celtit" scope="row">Después de fecha límite</td>
+					<td>$130.00</td>
+					<td>$325.00</td>
+					<td>$520.00</td>
+					<td>$815.00</td>
+				</tr>
+		</table>
+
+
+		
+		
+	</main>
+
+	<footer>
+		<div class="row clearfix"> 
+			<div class="col col_1-5"></div>
+			<div class="col col_1-5">
+				<p>Derechos reservados 2020</p>
+				<p><br/></p>
+				<p>
+					<a href="#">Aviso de privacidad</a><br/>
+					<a href="#">Términos y condiciones</a>
+				</p>
+			</div>
+			<div class="col col_1-5">
+				
+			</div>
+			<div id="redes_sociales" class="col col_1-5">
+				<p>
+					<a href="https://facebook.com" target="_blank" ><img src="src/ico_facebook_w.png" /></a>
+					<a href="https://twitter.com" target="_blank" ><img src="src/ico_twitter_w.png" /></a>
+					<a href="https://youtube.com" target="_blank" ><img src="src/ico_youtube_w.png" /></a>
+					<a href="https://instagram.com" target="_blank" ><img src="src/ico_instagram_w.png" /></a>
+					<a href="https://linkedin.com" target="_blank" ><img src="src/ico_linkedin_w.png" /></a>
+					<a href="https://web.whatsapp.com" target="_blank" ><img src="src/ico_whatsapp_w.png" /></a>
+					<a href="https://pinterest.com" target="_blank" ><img src="src/ico_pinterest_w.png" /></a>
+				</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
