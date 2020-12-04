@@ -38,48 +38,91 @@
 	<main id="main">
 		<p class="titulo_principal">Productos</p>
 		<div class="productos">
-		<img src="src/productos_A.png" />
-		<div>
 		
 		<table class="productos">
-		<caption class="tabdes">Categoría B</caption>
-				<tr>
-					<td class="celtit" id="pago" rowspan="3">Pago</td>
-					<td class="celtit" id="productos" colspan="4">Productos</td>
+			<caption >Categoría A</caption>
+			<tr>
+				<th id="productos">Productos</th>
+				<th id="precio">Precio</th>
+				<th id="caract">Características</th>
+			</tr>
+			<tr>
+				<td headers="productos">A1</td>
+				<td headers="precio">$219.00</td>
+				<td headers="caract"> 
+					<ul>
+						<li>Lorem impsum dolor sit amet consectetur</li>
+						<li>Lorem impsum dolor sit amet consectetur</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td headers="productos">A2</td>
+				<td headers="precio">$437.00</td>
+				<td headers="caract"> 
+					<ul>
+						<li>Lorem impsum dolor sit amet consectetur</li>
+						<li>Lorem impsum dolor sit amet consectetur</li>
+						<li>Lorem impsum dolor sit amet consectetur</li>
+						<li>Lorem impsum dolor sit amet consectetur</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td headers="productos">A3</td>
+				<td headers="precio">$675.00</td>
+				<td headers="caract"> 
+					<ul>
+						<li>Lorem impsum dolor sit amet consectetur</li>
+						<li>Loraaaem impsum dolor sit amet consectetur</li>
+						<li>Loraaem imsadasdpsum dolor sit amet consectetur</li>
+						<li>Lorem imasdaspsum dolor sit amet consectetur</li>
+						<li>Lorem impasdasum dolor sit amet consectetur</li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+		
+		
+		<table class="productos">
+		<caption>Categoría B</caption>
+				<tr>					
+					<th class="celtit" id="pago" rowspan="3">Pago</th>
+					<th class="celtit" id="productos" colspan="4">Productos</th>
 				</tr>
 				<tr>
-					<td class="celtit" headers="productos" id="planA" colspan="2">Plan A</td>
-					<td class="celtit" headers="productos" id="planB" colspan="2">Plan B</td>
+					<th class="celtit" headers="productos" id="planA" colspan="2">Plan A</th>
+					<th class="celtit" headers="productos" id="planB" colspan="2">Plan B</th>
 				</tr>
 				<tr>
-					<td class="celtit" headers="productos planA">B1</td>
-					<td class="celtit" headers="productos planA">B2</td>
-					<td class="celtit" headers="productos planB">B3</td>
-					<td class="celtit" headers="productos planB">B4</td>
+					<th class="celtit" headers="productos planA" id="b1">B1</th>
+					<th class="celtit" headers="productos planA" id="b2">B2</th>
+					<th class="celtit" headers="productos planB" id="b3">B3</th>
+					<th class="celtit" headers="productos planB" id="b4">B4</th>
 				</tr>
 				<tr class="rw-color">
 					<td class="celtit" scope="row">7 días antes de fecha límite</td>
-					<td>$92.00</td>
-					<td>$285.00</td>
-					<td>$478.00</td>
-					<td>$478.00</td>
+					<td headers="productos planA b1">$92.00</td>
+					<td headers="productos planA b2">$285.00</td>
+					<td headers="productos planB b3">$478.00</td>
+					<td headers="productos planB b4">$478.00</td>
 				</tr>
 				<tr>
 					<td class="celtit" scope="row">Antes/En fecha límite</td>
-					<td>$100.00</td>
-					<td>$300.00</td>
-					<td>$500.00</td>
-					<td>$800.00</td>
+					<td headers="productos planA b1">$100.00</td>
+					<td headers="productos planA b2">$300.00</td>
+					<td headers="productos planB b3">$500.00</td>
+					<td headers="productos planB b4">$800.00</td>
 				</tr>
 				<tr class="rw-color">
 					<td class="celtit" scope="row">Después de fecha límite</td>
-					<td>$130.00</td>
-					<td>$325.00</td>
-					<td>$520.00</td>
-					<td>$815.00</td>
+					<td headers="productos planA b1">$130.00</td>
+					<td headers="productos planA b2">$325.00</td>
+					<td headers="productos planB b3">$520.00</td>
+					<td headers="productos planB b4">$815.00</td>
 				</tr>
 		</table>
-
+</div>
 
 		
 		
